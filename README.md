@@ -12,6 +12,8 @@ This means that every subclass or derived class should be substitutable for thei
 ## I for Interface Segregation
 Interfaces should not force classes to implement what they can not do. Large interfaces should be divided into small ones.
 
-
 ## D for Dependency Inversion
 Components should depend on abstractions, not on concrete objects.
+
+## Reference
+- [Amigoscode: Learn SOLID Principles with CLEAN CODE Examples](https://www.youtube.com/watch?v=_jDNAf3CzeY)
