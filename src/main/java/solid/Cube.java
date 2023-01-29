@@ -1,17 +1,20 @@
 package solid;
 
-public class Cube implements Shape {
+public class Cube implements Shape, ThreeDimensionalShape {
 	private int a;
-	private int b;
 	
-	public Cube(int a, int b) {
+	public Cube(int a) {
 		this.a = a;
-		this.b = b;
 	}
 	
 	@Override
 	public double area() {
-		return 4*a*b;
+		return 4*a*a;
+	}
+
+	@Override
+	public double volumne() {
+		return Math.pow(a, 3);
 	}
 
 }

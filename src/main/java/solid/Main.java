@@ -7,7 +7,7 @@ public class Main {
 		AreaCalculator areaCalculator = new AreaCalculator();
 		Circle circle = new Circle(10);
 		Square square = new Square(10);
-		Cube cube = new Cube(5,5);
+		Cube cube = new Cube(5);
 		Rectangle rectangle = new Rectangle(10, 2);
 		ShapesPrinter printer = new ShapesPrinter();
 //		Shape noShape = new NoShape();
