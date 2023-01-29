@@ -1,12 +1,20 @@
 package solid;
 
-public class ShapesPrinter {
+import java.util.List;
 
-	public String json(int sum) {
-		return "{sum: %s}".formatted(sum);
+public class ShapesPrinter {
+	
+	private final IAreaCalculator areaCalculator;
+	
+	public ShapesPrinter(IAreaCalculator areaCalculator) {
+		this.areaCalculator = areaCalculator;
+	}
+
+	public String json(List<Shape> shapes) {
+		return "{sum: %s}".formatted(areaCalculator.sum(shapes));
 	}
 	
-	public String csv(int sum) {
-		return "sum, %s".formatted(sum);
+	public String csv(List<Shape> shapes) {
+		return "sum, %s".formatted(areaCalculator.sum(shapes));
 	}
 }
